@@ -9,6 +9,7 @@ $(document).ready(function() {
     })
     .done(function(r) {
       console.log(r)
+      $('content').append(r)
     })
   })
 });

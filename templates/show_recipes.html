@@ -1,1 +1,7 @@
-testing
+<div class="recipe-list">
+{% for recipe in results %}
+  <div class="recipe">
+    {{ recipe['title'] }}
+  </div>
+{% endfor %}
+</<div>
