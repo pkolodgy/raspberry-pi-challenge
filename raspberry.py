@@ -11,7 +11,8 @@ def home():
 def get_recipe(fruit):
     data = {'q': fruit+' pie'}
     r = requests.get("http://www.recipepuppy.com/api", params=data)
-    return app.response_class(r.content, content_type='application/json')
+    results = app.response_class(r.content, content_type='application/json')
+    return render_template('show_recipes.html')
 
 if __name__ == "__main__":
     app.run(threaded=True)

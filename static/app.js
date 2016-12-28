@@ -8,10 +8,7 @@ $(document).ready(function() {
       url: '/'+fruit+'/pie'
     })
     .done(function(r) {
-      var results = r['results']
-      results.forEach(function(recipe) {
-        $('body').append(recipe['title'])
-      })
+      console.log(r)
     })
   })
 });
