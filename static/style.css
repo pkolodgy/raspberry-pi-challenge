@@ -1,10 +1,12 @@
 html {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9c/Rhubarb_Pie_Lattice_Crust_Delicious.JPG);
   overflow: -moz-scrollbars-vertical;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 body {
+  background-color: rgba(2255,200,131,0.3);
   margin: 10px auto;
   padding: 20px;
   max-width: 1100px;
@@ -17,6 +19,7 @@ body {
 header {
   width: 90%;
   margin: 10px auto;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -25,7 +28,6 @@ h2 {
   text-transform: uppercase;
   margin: 0 auto;
   padding-bottom: 20px;
-  text-align: justify;
 }
 
 main {
@@ -39,35 +41,54 @@ main {
 }
 
 input[type=text] {
-  float: left;
-  width: 90%;
+  background-color: rgb(255,255,255);
+  background-color: rgba(100,0,45,0.5);
+  width: 100%;
   height: 100%;
   border: 1px black solid;
   border-radius: 25px;
   text-align: center;
   font-size: 50px;
+  display: block;
 }
 
 .pie-btn {
-  float: right;
-  height: 75px;
-  width: 75px;
-  display: inline-block;
+  height: 150px;
+  width: 150px;
+}
+
+.recipe-list {
+  margin-top:150px;
 }
 
 .recipe {
+  background-color: rgba(100,0,45,0.5);
   margin: 10px;
   padding:15px;
   border: 1px black solid;
+  border-radius: 10px;
   display: block;
 }
 
 .recipe-header {
   font-size:20px;
   display: block;
+  cursor: pointer;
 }
 
 .recipe-body {
   padding-top: 10px;
   display: block;
+}
+
+a:link {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #aaa;
 }

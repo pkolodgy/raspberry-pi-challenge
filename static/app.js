@@ -12,6 +12,7 @@ $(document).ready(function() {
     .done(function(r) {
       $('main').append(r)
       $('.recipe-body').hide()
+      $(e.target)[0].reset()
     })
   })
 
