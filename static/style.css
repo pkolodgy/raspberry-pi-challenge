@@ -1,0 +1,78 @@
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 1100px;
+  min-height: 300px;
+  border: 1px black solid;
+  border-radius: 25px;
+  font-family: 'Helvetica';
+}
+
+header {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 64px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+main {
+  padding-bottom: 15px;
+}
+
+#fruit-search {
+  margin: auto;
+  padding-bottom:20px;
+  height: 70px;
+}
+
+input[type=text] {
+  width: 90%;
+  height: 100%;
+  border: 1px black solid;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.pie-btn {
+  background-image: url(PIESEARCH.png);
+  background-repeat: no-repeat;
+  height: 49px;
+  width: 49px;
+  padding: 0;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  outline: none;
+  display: block;
+}
+
+.recipe {
+  margin: 10px;
+  padding:15px;
+  border: 1px black solid;
+  display: block;
+}
+
+.recipe-header {
+  font-size:20px;
+  display: block;
+}
+
+.recipe-body {
+  padding-top: 10px;
+  display: block;
+}

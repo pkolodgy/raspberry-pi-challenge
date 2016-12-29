@@ -1,7 +1,8 @@
 <div class="recipe-list">
 {% for recipe in results %}
   <div class="recipe">
-    {{ recipe['title'] }}
+    <div class="recipe-header">{{ recipe['title'] }}</div>
+    <div class="recipe-body">Ingredients: {{ recipe['ingredients'] }}</div>
   </div>
 {% endfor %}
 </<div>
