@@ -2,7 +2,10 @@
 {% for recipe in results %}
   <div class="recipe">
     <div class="recipe-header">{{ recipe['title'] }}</div>
-    <div class="recipe-body">Ingredients: {{ recipe['ingredients'] }}</div>
+    <div class="recipe-body">
+      <p>Link: <a href={{ recipe.href }} target="blank">{{ recipe.href }}</a>
+      <p>Ingredients: {{ recipe['ingredients'] }}<p>
+    </div>
   </div>
 {% endfor %}
 </<div>
