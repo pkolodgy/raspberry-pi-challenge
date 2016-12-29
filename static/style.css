@@ -39,6 +39,7 @@ main {
 }
 
 input[type=text] {
+  float: left;
   width: 90%;
   height: 100%;
   border: 1px black solid;
@@ -48,16 +49,10 @@ input[type=text] {
 }
 
 .pie-btn {
-  background-image: url(PIESEARCH.png);
-  background-repeat: no-repeat;
-  height: 49px;
-  width: 49px;
-  padding: 0;
-  border: none;
-  color: transparent;
-  background-color: transparent;
-  outline: none;
-  display: block;
+  float: right;
+  height: 75px;
+  width: 75px;
+  display: inline-block;
 }
 
 .recipe {
