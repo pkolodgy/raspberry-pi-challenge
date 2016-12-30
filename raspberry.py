@@ -1,7 +1,6 @@
 import requests
-import json
 
-from flask import Flask, render_template
+from flask import Flask, render_template, json
 
 app = Flask(__name__)
 
@@ -13,9 +12,8 @@ def home():
 def get_recipes(fruit):
     data = {'q': fruit+' pie'}
     r = requests.get("http://www.recipepuppy.com/api", params=data)
-    # response = app.response_class(r.content, content_type='application/json')
-    parsed = r.json()['results']
-    return render_template('show_recipes.html', results=parsed)
+    recipes = r.json()['results']
+    return render_template('show_recipes.html', recipes=recipes)
 
 if __name__ == "__main__":
     app.run(threaded=True)
