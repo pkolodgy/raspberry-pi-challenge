@@ -1,1 +1,1 @@
-web: flask raspberry.py
+web: flask run
