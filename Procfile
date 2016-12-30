@@ -1,1 +1,1 @@
-web: gunicorn raspberry:app
+web: gunicorn --log-file=- raspberry:app
